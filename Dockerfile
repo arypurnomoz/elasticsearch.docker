@@ -12,8 +12,6 @@ RUN \
   && /es/bin/plugin --install lmenezes/elasticsearch-kopf/master \
   && /es/bin/plugin --install mobz/elasticsearch-head
 
-VOLUME ["/es/log", "/es/data"]
-
 EXPOSE 9200 9300
 
 ENTRYPOINT ["/es/bin/elasticsearch"]
