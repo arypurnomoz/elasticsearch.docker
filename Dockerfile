@@ -12,6 +12,8 @@ RUN \
   && /es/bin/plugin --install lmenezes/elasticsearch-kopf/master \
   && /es/bin/plugin --install mobz/elasticsearch-head
 
+ADD run.sh /tmp/run.sh
+
 EXPOSE 9200 9300
 
 ENTRYPOINT ["/tmp/run.sh"]
