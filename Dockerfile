@@ -14,4 +14,4 @@ RUN \
 
 EXPOSE 9200 9300
 
-ENTRYPOINT ["/es/bin/elasticsearch"]
+ENTRYPOINT ["/tmp/run.sh"]
