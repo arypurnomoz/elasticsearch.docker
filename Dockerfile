@@ -9,6 +9,7 @@ RUN \
   && rm /tmp/elastic.zip \
   && mv /tmp/elastic* /es \
   && chmod a+x /es/bin/* \
+  && rm -f /es/config/elasticsearch.yml \
   && /es/bin/plugin --install lmenezes/elasticsearch-kopf/master \
   && /es/bin/plugin --install mobz/elasticsearch-head
 
